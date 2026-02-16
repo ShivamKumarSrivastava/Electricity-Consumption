@@ -1,8 +1,8 @@
 # note all are required for the project, but some are commented out so that streamlit can run without issues.
 
-streamlit>=1.29
+# streamlit>=1.29
 numpy==1.26.4
-pandas==2.1.1
+#pandas==2.1.1
 
 
 # matplotlib==3.8.4
