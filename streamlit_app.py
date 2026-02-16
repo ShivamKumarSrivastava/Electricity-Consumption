@@ -5,9 +5,9 @@ import numpy as np
 st.set_page_config(page_title="Power Prediction", layout="centered")
 
 models = {
-    "Zone1": joblib.load(r"models\zone1_model.pkl"),
-    "Zone2": joblib.load(r"models\zone2_model.pkl"),
-    "Zone3": joblib.load(r"models\zone3_model.pkl")
+    "Zone1": joblib.load("models/zone1_model.pkl"),
+    "Zone2": joblib.load("models/zone2_model.pkl"),
+    "Zone3": joblib.load("models/zone3_model.pkl")
 }
 
 day_map = {
