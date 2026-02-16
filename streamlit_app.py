@@ -1,14 +1,19 @@
 import streamlit as st
 import joblib
 import numpy as np
+from typing import Dict
 
 st.set_page_config(page_title="Power Prediction", layout="centered")
 
-models = {
-    "Zone1": joblib.load("models/zone1_model.pkl"),
-    "Zone2": joblib.load("models/zone2_model.pkl"),
-    "Zone3": joblib.load("models/zone3_model.pkl")
-}
+@st.cache_resource
+def load_models() -> Dict[str, object]:
+    return {
+        "Zone1": joblib.load("models/zone1_model.pkl"),
+        "Zone2": joblib.load("models/zone2_model.pkl"),
+        "Zone3": joblib.load("models/zone3_model.pkl"),
+    }
+
+models = load_models()
 
 day_map = {
     'Monday':0,
