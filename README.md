@@ -2,7 +2,7 @@
 
 A Machine Learning web application built using **Streamlit** that predicts electricity power consumption for different zones based on weather and time-related features.
 
-🔗 🔗 **Live App:** [Click Here to Try the App](https://electricity-consumption.streamlit.app)
+🔗 🔗 **Live App:** [Click Here to Try the App](https://electricity-consumption-7deafu6weilkfweqjzq6bf.streamlit.app/)
 
 
 ---
@@ -57,6 +57,7 @@ The prediction is based on:
 
 ## 📂 Project Structure
 
+```
 Power-Consumption-Prediction/
 │
 ├── data/
@@ -75,7 +76,7 @@ Power-Consumption-Prediction/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
+```
 
 
 ---
@@ -88,25 +89,29 @@ cd Electricity-Consumption
 pip install -r requirements.txt
 streamlit run streamlit_app.py
 
+```
 
-🌍 Deployment
+## 🌍 Deployment
 
-This application is deployed using Streamlit Community Cloud.
+This application is deployed using **Streamlit Community Cloud**.
 
+---
 
-📊 Future Improvements
+## 📊 Future Enhancements
 
-Add model performance metrics (R², MAE, RMSE)
+- Add evaluation metrics (R², MAE, RMSE)
+- Add feature importance visualization
+- Add historical data visualization dashboard
+- Implement model comparison
+- Dockerize the application for production deployment
 
-Add feature importance visualization
+---
 
-Improve UI with advanced layout styling
+## 👨‍💻 Author
 
-Add historical data visualization dashboard
+**Shivam Kumar**  
+Machine Learning Enthusiast 🚀  
 
-Dockerize the application
+---
 
-👨‍💻 Author
-
-Shivam Kumar 
-Machine Learning Enthusiast 🚀
+⭐ If you found this project useful, consider giving it a star!
